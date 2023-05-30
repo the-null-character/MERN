@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sample Entry 1</td>
+        <td><a href="https://www.example.com">Visit Website</a></td>
+      </tr>
+      <tr>
+        <td>Sample Entry 2</td>
+        <td><a href="https://www.example.com">Visit Website</a></td>
+      </tr>
+      <tr>
+        <td>Sample Entry 3</td>
+        <td><a href="https://www.example.com">Visit Website</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
