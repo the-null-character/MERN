@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+</head>
+<body>
+  <h1>Page 2</h1>
+  <button onclick="goToPage('PageNav3.html')">Next</button>
+  <button onclick="goToPage('PageNav1.html')">Previous</button>
+  <h3>Other Pages:</h3>
+  <ul>
+    <li><a href="PageNav1.html">Page 1</a></li>
+    <li><a href="PageNav2.html">Page 2</a></li>
+    <li><a href="PageNav3.html">Page 3</a></li>
+  </ul>
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
