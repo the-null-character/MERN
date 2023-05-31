@@ -3,6 +3,7 @@ table {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  background-color: #ffcece;
 }
 
 thead th {
@@ -59,4 +60,9 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+
+body {
+  background-image: url('assets/doodle.jpg');
 }
