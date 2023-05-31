@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TASK 3</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: cyan;
+                border: 1px solid #555;
+              }
+              li a {
+                display:block;
+                color: blue;
+                padding: 8px 16px;
+                text-decoration: none;
+              }
+              
+              li {
+                text-align: left;
+              }
+              
+              li:last-child {
+                border-bottom: none;
+              }
+              
+              li a.active {
+                background-color:orange;
+                color: white;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: cyan;
+                color: blue;
+              }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="boot">Bootstrap</a></li>
+        </ul>
+    </body>
+</html>

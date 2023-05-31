@@ -1,0 +1,36 @@
+#side a{
+    position: absolute;
+    left: -80px;
+    transition: 0.5s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+#side a:hover {
+    left:0;
+}
+
+#home{
+    top: 20px;
+    background-color: rgb(13, 111, 13);
+}
+
+#tut{
+    top: 80px;
+    background-color: rgb(82, 82, 230);
+}
+
+#plug{
+    top: 140px;
+    background-color: rgb(240, 68, 68);
+}
+
+#blog{
+    top: 200px;
+    background-color: grey;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TASK 4
+        </title>
+
+        <style>
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #9c9b9b; 
+            }
+
+            li{
+                float: left;
+                border-right:1px solid #a79be9;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: rgb(37, 37, 149);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: rgb(122, 115, 115);
+              }
+              
+              .active {
+                background-color: rgb(60, 59, 59);
+                color: white;
+              }
+        </style>
+
+    </head>
+
+    <body>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="html">HTML</a></li>
+            <li><a href="css">CSS</a></li>
+            <li><a href="boot">Bootstrap</a></li>
+        </ul>
+    </body>
+</html>
