@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods Example</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    // Sample array
+    const arr = [10, 20, 30, 10, 20, 30];
+
+    // Helper function to display results on the webpage
+    function displayResult(methodName, result) {
+      const outputDiv = document.getElementById("output");
+      const resultText = document.createElement("p");
+      resultText.textContent = methodName + ":\n" + JSON.stringify(result);
+      outputDiv.appendChild(resultText);
+    }
+
+    // concat method
+    const concatResult = arr.concat([40, 50, 60]);
+    displayResult("concat method", concatResult);
+
+    // copyWithin method
+    const copyWithinResult = arr.copyWithin(0, 2);
+    displayResult("copyWithin method", copyWithinResult);
+
+    // findIndex method
+    const findIndexResult = arr.findIndex(item => item === 20);
+    displayResult("findIndex method", findIndexResult);
+
+    // indexOf method
+    const indexOfResult = arr.indexOf(10);
+    displayResult("indexOf method", indexOfResult);
+
+    // map method
+    const mapResult = arr.map(item => item * 2);
+    displayResult("map method", mapResult);
+
+    // every method
+    const everyResult = arr.every(item => item > 5);
+    displayResult("every method", everyResult);
+
+    // some method
+    const someResult = arr.some(item => item > 25);
+    displayResult("some method", someResult);
+
+    // lastIndexOf method
+    const lastIndexOfResult = arr.lastIndexOf(20);
+    displayResult("lastIndexOf method", lastIndexOfResult);
+
+    // push method
+    const pushResult = arr.push(100);
+    displayResult("push method", arr);
+
+    // pop method
+    const popResult = arr.pop();
+    displayResult("pop method", arr);
+
+    // filter method
+    const filterResult = arr.filter(item => item > 10);
+    displayResult("filter method", filterResult);
+
+    // shift method
+    const shiftResult = arr.shift();
+    displayResult("shift method", arr);
+
+    // find method
+    const findResult = arr.find(item => item === 20);
+    displayResult("find method", findResult);
+  </script>
+</body>
+</html>

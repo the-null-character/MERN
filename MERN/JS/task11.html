@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #FFCC99, #FF99CC);
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      color: #0000FF;
+      margin-bottom: 20px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    
+    .checkbox-group {
+      margin-bottom: 10px;
+    }
+    
+    .checkbox-group label {
+      display: block;
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    .register-btn {
+      background-color: #FF69B4;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+      
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label>Gender:</label>
+      <div class="checkbox-group">
+        <label>
+          <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Female
+        </label>
+      </div>
+      
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+      
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+      
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+      </select>
+      
+      <label>Languages Known:</label>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="language" value="english"> English
+        </label>
+        <label>
+          <input type="checkbox" name="language" value="spanish"> Spanish
+        </label>
+        <label>
+          <input type="checkbox" name="language" value="french"> French
+        </label>
+      </div>
+      
+      <label>
+        <input type="checkbox" name="declaration" required>
+        I hereby declare that all details I have provided are true.
+      </label>
+      
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </div>
+</body>
+</html>
